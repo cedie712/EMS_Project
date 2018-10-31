@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb38754a-041e-48fb-b69d-e86968697a58" name="Default Changelist" comment="" />
+    <list default="true" id="fb38754a-041e-48fb-b69d-e86968697a58" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../EMS_Desktop_App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_Desktop_App/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EMS_Desktop_App/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_Desktop_App/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMS_REST_API/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/EMS_REST_API/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMS_REST_API_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EMS_REST_API_project/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +35,13 @@
     <session id="-1028274036">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="55" />
+          <entry key="project.closed" value="57" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.28" value="1" />
@@ -42,6 +49,7 @@
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.51" value="1" />
@@ -70,7 +78,7 @@
           <entry key="project.open.time.87" value="1" />
           <entry key="project.open.time.89" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="62" />
+          <entry key="project.opened" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -79,7 +87,7 @@
           <entry key="html" value="133" />
           <entry key="jpg" value="1" />
           <entry key="js" value="11" />
-          <entry key="py" value="67" />
+          <entry key="py" value="69" />
           <entry key="rnc" value="1" />
           <entry key="sql" value="2" />
         </counts>
@@ -90,7 +98,7 @@
           <entry key="HTML" value="133" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="11" />
-          <entry key="Python" value="67" />
+          <entry key="Python" value="69" />
           <entry key="RNG Compact" value="1" />
           <entry key="Scratch" value="2" />
         </counts>
@@ -100,7 +108,7 @@
           <entry key="css" value="1080" />
           <entry key="html" value="16031" />
           <entry key="js" value="734" />
-          <entry key="py" value="14027" />
+          <entry key="py" value="14045" />
           <entry key="sql" value="15" />
           <entry key="txt" value="6" />
         </counts>
@@ -111,23 +119,31 @@
           <entry key="HTML" value="16031" />
           <entry key="JavaScript" value="733" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="14027" />
+          <entry key="Python" value="14045" />
           <entry key="Scratch" value="15" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EMS_REST_API/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-224">
-              <caret lean-forward="true" />
+            <state relative-caret-position="255">
+              <caret line="332" column="28" lean-forward="true" selection-start-line="332" selection-start-column="28" selection-end-line="332" selection-end-column="28" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1533420295136" expanded="true" signature="13909:14179" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EMS_REST_API_project/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1950">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -345,7 +361,7 @@
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2840909" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2931818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -359,7 +375,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32917318" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848485" visible="true" weight="0.3082942" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49848485" visible="true" weight="0.3082942" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50151515" side_tool="true" weight="0.3073323" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32917318" />
       <window_info anchor="bottom" id="Thumbnails" order="14" weight="0.32917318" />
@@ -423,6 +439,11 @@
           <url>file://$PROJECT_DIR$/EMS_REST_API/websiteviews.py</url>
           <line>438</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/EMS_REST_API/views.py</url>
+          <line>324</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -687,18 +708,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EMS_REST_API_project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        <state relative-caret-position="-1950">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EMS_REST_API/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
-          <caret lean-forward="true" />
+        <state relative-caret-position="255">
+          <caret line="332" column="28" lean-forward="true" selection-start-line="332" selection-start-column="28" selection-end-line="332" selection-end-column="28" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1533420295136" expanded="true" signature="13909:14179" ph="..." />
           </folding>
         </state>
       </provider>

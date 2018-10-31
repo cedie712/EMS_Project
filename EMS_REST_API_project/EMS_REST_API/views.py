@@ -102,7 +102,7 @@ def get_weekday(cur_datetime):
 
 
 def get_datetimePH():
-    t =  datetime.now(timezone('Asia/Manila')).strftime('%Y-%m-%d %H:%M:%S')
+    t = datetime.now(timezone('Asia/Manila')).strftime('%Y-%m-%d %H:%M:%S')
     return t
 
 

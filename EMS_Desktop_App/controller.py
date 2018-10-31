@@ -223,6 +223,9 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
         self.filtering_list = for_filtering
 
     def record_attendance(self, command, password):
+        db = self.connection()
+        if db is False:
+            return 0
         authCD = AuthCDWindow(self)
         if not authCD.exec_():
             login.hide()
@@ -232,7 +235,6 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             id = cap.identify()
             cv2.destroyAllWindows()
             self.setEnabled(True)
-            db = EMS_db_model()
             if id is False:
                 QtGui.QMessageBox.warning(self, 'Note',
                                           'Unknown Person', None)
@@ -253,6 +255,9 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
                 self.clear_pane()
 
     def show_logs(self, command, password):
+        db = self.connection()
+        if db is False:
+            return 0
         authCD = AuthCDWindow(self)
         if not authCD.exec_():
             login.hide()
@@ -262,7 +267,6 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             id = cap.identify()
             cv2.destroyAllWindows()
             self.setEnabled(True)
-            db = EMS_db_model()
             if id is False:
                 QtGui.QMessageBox.warning(self, 'Note',
                                           'Unknown Person', None)
@@ -302,33 +306,21 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
         self.time_label.setText(ctime)
 
     def sign_in(self):
-        con = self.connection_check()
-        if con is False:
-            return 0
         checkpass = self.check_pass()
         if checkpass[0]:
             self.record_attendance('clock-in', checkpass[1])
 
     def sign_out(self):
-        con = self.connection_check()
-        if con is False:
-            return 0
         checkpass = self.check_pass()
         if checkpass[0]:
             self.record_attendance('clock-out', checkpass[1])
 
     def log_request(self):
-        con = self.connection_check()
-        if con is False:
-            return 0
         checkpass = self.check_pass()
         if checkpass[0]:
             self.show_logs('show my logs', checkpass[1])
 
     def all_log_request(self):
-        con = self.connection_check()
-        if con is False:
-            return 0
         checkpass = self.check_pass()
         if checkpass[0]:
             self.show_logs('show all logs', checkpass[1])
@@ -355,8 +347,8 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
     #     cv2.destroyAllWindows()
 
     def register_window_show(self):
-        con = self.connection_check()
-        if con is False:
+        db = self.connection()
+        if db is False:
             return 0
         register_window = RegisterWindow(self)
         login = AuthenticationWindow(self)
@@ -366,8 +358,8 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             register_window.show()
 
     def edit_config_show(self):
-        con = self.connection_check()
-        if con is False:
+        db = self.connection()
+        if db is False:
             return 0
         globalconfig_window = GlobalConfigWindow(self)
         login = AuthenticationWindow(self)
@@ -377,10 +369,9 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             globalconfig_window.show()
 
     def employee_list_show(self):
-        con = self.connection_check()
-        if con is False:
+        db = self.connection()
+        if db is False:
             return 0
-        db = EMS_db_model()
         emp_list = db.fetch_profile()
         employee_list_window = EmployeeListView(emp_list, self)
         login = AuthenticationWindow(self)
@@ -390,8 +381,8 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             employee_list_window.show()
 
     def clocked_employee_show(self):
-        con = self.connection_check()
-        if con is False:
+        db = self.connection()
+        if db is False:
             return 0
         db = EMS_db_model()
         emp_list = db.fetch_profile()
@@ -399,9 +390,6 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
         clocked_employee_window.show()
 
     def graphopt_show(self):
-        con = self.connection_check()
-        if con is False:
-            return 0
         graph_window = GraphOpt(self)
         login = AuthenticationWindow(self)
         if not login.exec_():
@@ -410,9 +398,6 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             graph_window.show()
 
     def memo_show(self):
-        con = self.connection_check()
-        if con is False:
-            return 0
         memo_window = MemoWindow(self)
         login = AuthenticationWindow(self)
         if not login.exec_():
@@ -424,9 +409,9 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
         help_me = HelpWindow(self)
         help_me.show()
 
-    def connection_check(self):
+    def connection(self):
         try:
-            EMS_db_model()
+            return EMS_db_model()
         except:
             QtGui.QMessageBox.warning(self, 'Connection Failed',
                                             'Cannot connect to the server,\nCheck your internet connection.', None)
@@ -467,13 +452,17 @@ class AuthenticationWindow(QtGui.QDialog, authentication_form.Ui_authentication_
         self.setWindowModality(QtCore.Qt.ApplicationModal)
         self.show()
 
-    def check(self):
+    def connection(self):
         try:
-            EMS_db_model()
+            return EMS_db_model()
         except:
             QtGui.QMessageBox.warning(self, 'Connection Failed',
-                                      'Cannot connect to the server,\nCheck your internet connection.', None)
-            self.pass_txt.clear()
+                                            'Cannot connect to the server,\nCheck your internet connection.', None)
+            return False
+
+    def check(self):
+        db = self.connection()
+        if db is False:
             return 0
 
         # testing
@@ -483,7 +472,6 @@ class AuthenticationWindow(QtGui.QDialog, authentication_form.Ui_authentication_
         #     pass
 
         # production
-        db = EMS_db_model()
         user_pass = self.pass_txt.text()
         if db.master_verify(user_pass):
             self.accept()
