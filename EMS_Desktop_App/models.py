@@ -28,7 +28,7 @@ class EMS_db_model:
 
         # Http Authentication
         self.user = 'cedrick'
-        self.password = 'ChangeMeYouBastard'
+        self.password = 'qzwxec=-0dsa'
         self.auth = HTTPBasicAuth(self.user, self.password)
 
         # get configurations
