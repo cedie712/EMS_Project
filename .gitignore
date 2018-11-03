@@ -3,5 +3,6 @@ EMS_Desktop_App/.idea/
 EMS_REST_API_project/venv/
 EMS_REST_API_project/ems_db.sql
 EMS_REST_API_project/.idea/
-EMS_Desktop_App/.desktop
-EMS_REST_API_project/.desktop
+EMS_Desktop_App/.directory
+EMS_REST_API_project/.directory
+.directory
