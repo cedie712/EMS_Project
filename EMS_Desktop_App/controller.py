@@ -19,6 +19,7 @@ from dateutil.parser import parse
 import pytz
 time_zone = pytz.timezone('Asia/Manila')
 import spfunc as sp
+import config
 import time
 
 
@@ -231,7 +232,7 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             login.hide()
         else:
             self.setEnabled(False)
-            cap = Identifier.Detect(0)
+            cap = Identifier.Detect(config.CAMERA_INDEX)
             id = cap.identify()
             cv2.destroyAllWindows()
             self.setEnabled(True)
@@ -263,7 +264,7 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             login.hide()
         else:
             self.setEnabled(False)
-            cap = Identifier.Detect(0)
+            cap = Identifier.Detect(config.CAMERA_INDEX)
             id = cap.identify()
             cv2.destroyAllWindows()
             self.setEnabled(True)
@@ -485,7 +486,7 @@ class AuthenticationWindow(QtGui.QDialog, authentication_form.Ui_authentication_
                 login.hide()
             else:
                 self.setEnabled(False)
-                cap = Identifier.Detect(0)
+                cap = Identifier.Detect(config.CAMERA_INDEX)
                 id = cap.identify()
                 cv2.destroyAllWindows()
                 self.setEnabled(True)

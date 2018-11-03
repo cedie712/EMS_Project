@@ -1,5 +1,6 @@
 from PyQt4 import QtGui, QtCore
 from Attendance import AttendanceWindow
+import config
 from Salary import SalaryWindow
 import EmployeeView
 from models import EMS_db_model
@@ -494,7 +495,7 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
         emp = self.fetch_employee()
         userx = self.db.get_user_info(emp['user'])
         self.setEnabled(False)
-        dataSetCreator.DataSetCreator(0, int(userx[2]), 1, 'dataSetsample')
+        dataSetCreator.DataSetCreator(config.CAMERA_INDEX, int(userx[2]), 1, 'dataSetsample')
         check_if_ok = CaptureCheckWindow(int(userx[2]), self)
         if not check_if_ok.exec_():
             check_if_ok.hide()

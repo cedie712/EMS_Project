@@ -4,6 +4,7 @@ from models import EMS_db_model
 import cv2
 from face import dataSetCreator
 from datasetcheck import CaptureCheckWindow
+import config
 
 
 class RegisterWindow(QtGui.QMainWindow, RegistrationWindow.Ui_RegisterWindow):
@@ -203,7 +204,7 @@ class RegisterWindow(QtGui.QMainWindow, RegistrationWindow.Ui_RegisterWindow):
 
     def capture_dataset(self, id):
         self.setEnabled(False)
-        dataSetCreator.DataSetCreator(0, id, 1, 'dataSetsample')
+        dataSetCreator.DataSetCreator(config.CAMERA_INDEX, id, 1, 'dataSetsample')
         cv2.destroyAllWindows()
         self.setEnabled(True)
 

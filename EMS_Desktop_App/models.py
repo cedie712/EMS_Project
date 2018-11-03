@@ -2,13 +2,14 @@ import requests
 from datetime import datetime, date
 from requests.auth import HTTPBasicAuth
 import json
+import config
 
 
 class EMS_db_model:
     def __init__(self):
 
         # API URLs
-        self.host = 'http://localhost:8000/'
+        self.host = config.API_HOST
 
         self.employeeURL = self.host + 'Employee/'
         self.employeeConfigURL = self.host + 'EmployeeConfig/'
@@ -27,8 +28,8 @@ class EMS_db_model:
         self.updateStatus = self.host + 'updateStatus/'
 
         # Http Authentication
-        self.user = 'cedrick'
-        self.password = 'qzwxec=-0dsa'
+        self.user = config.API_USER
+        self.password = config.API_USER_PASSWORD
         self.auth = HTTPBasicAuth(self.user, self.password)
 
         # get configurations

@@ -2,139 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b26c16b2-a743-418c-831a-7b1f20e683cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EMS_Desktop_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EMS_Desktop_App.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/62a8e03a-1be9-43d8-802c-e1774096a85b.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataSetsample/2.0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataSetsample/2.0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataSetsample/2.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataSetsample/2.1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/Profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Registration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profilepics/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/profilepics/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_history_captures/2018-11-01 01:41:15.265270.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_history_captures/2018-11-01 01:42:04.666978.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_history_captures/2018-11-01 01:42:21.636033.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_history_captures/2018-11-01 01:42:39.945274.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_history_captures/2018-11-01 01:42:55.630780.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_history_captures/2018-11-01 01:43:10.508858.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_history_captures/2018-11-01 01:43:27.931214.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_history_captures/2018-11-01 01:43:43.125618.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_history_captures/2018-11-01 01:44:00.557079.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_history_captures/2018-11-01 01:44:32.856145.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_history_captures/2018-11-01 01:44:51.609837.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_history_captures/2018-11-01 01:45:08.015900.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/.idea/EMS_REST_API_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/.idea/EMS_REST_API_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/.idea/dataSources/22b41dec-937a-46ec-bc44-74a43a8c1336.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/css/util.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/css/util.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Black.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-BlackItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-BlackItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-ExtraBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-ExtraBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-ExtraBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-ExtraLight.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-ExtraLight.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-ExtraLightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-LightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-LightItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Medium.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-MediumItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-MediumItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-SemiBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-SemiBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Thin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-Thin.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-ThinItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/fonts/poppins/Poppins-ThinItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/images/bg-01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/images/bg-01.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/images/icons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/images/icons/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/images/icons/map-marker.png" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/images/icons/map-marker.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/js/map-custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/js/map-custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/animate/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/animate/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/animsition/css/animsition.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/animsition/css/animsition.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/animsition/css/animsition.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/animsition/css/animsition.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/animsition/js/animsition.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/animsition/js/animsition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/animsition/js/animsition.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/animsition/js/animsition.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/js/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/js/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/js/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/bootstrap/js/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/countdowntime/countdowntime.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/countdowntime/countdowntime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/css-hamburgers/hamburgers.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/css-hamburgers/hamburgers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/css-hamburgers/hamburgers.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/css-hamburgers/hamburgers.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/daterangepicker/daterangepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/daterangepicker/daterangepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/daterangepicker/daterangepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/daterangepicker/daterangepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/daterangepicker/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/daterangepicker/moment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/daterangepicker/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/daterangepicker/moment.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/jquery/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/perfect-scrollbar/perfect-scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/perfect-scrollbar/perfect-scrollbar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/select2/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/select2/select2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/select2/select2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/select2/select2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/select2/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/select2/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/select2/select2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/Login_v15/vendor/select2/select2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/dashboard/vendor/jquery-easing/jquery.easing.compatibility.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/dashboard/vendor/jquery-easing/jquery.easing.compatibility.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/dashboard/vendor/jquery-easing/jquery.easing.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/dashboard/vendor/jquery-easing/jquery.easing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/dashboard/vendor/jquery-easing/jquery.easing.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../EMS_REST_API_project/EMS_REST_API/static/EMS_REST_API/dashboard/vendor/jquery-easing/jquery.easing.min.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +24,7 @@
     <SUITE FILE_PATH="coverage/EMS_Desktop_App$employeelist.coverage" NAME="employeelist Coverage Results" MODIFIED="1538080683341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EMS_Desktop_App$spfunc.coverage" NAME="spfunc Coverage Results" MODIFIED="1539193498164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EMS_Desktop_App$salarystats_all.coverage" NAME="salarystats_all Coverage Results" MODIFIED="1539359720439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/EMS_Desktop_App$controller.coverage" NAME="controller Coverage Results" MODIFIED="1541214731124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EMS_Desktop_App$controller.coverage" NAME="controller Coverage Results" MODIFIED="1541245182333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EMS_Desktop_App$Home.coverage" NAME="Home Coverage Results" MODIFIED="1536489848084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EMS_Desktop_App$tests__1_.coverage" NAME="tests (1) Coverage Results" MODIFIED="1540854570727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EMS_Desktop_App$tests.coverage" NAME="tests Coverage Results" MODIFIED="1536487690530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../openPW_REST_API_Project/openPW_REST_API" />
@@ -232,7 +107,7 @@
           <entry key="css" value="4" />
           <entry key="jpg" value="4" />
           <entry key="png" value="4" />
-          <entry key="py" value="297" />
+          <entry key="py" value="304" />
           <entry key="sql" value="6" />
           <entry key="txt" value="1" />
         </counts>
@@ -242,7 +117,7 @@
           <entry key="CSS" value="4" />
           <entry key="Image" value="8" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="297" />
+          <entry key="Python" value="304" />
           <entry key="Scratch" value="6" />
         </counts>
       </usages-collector>
@@ -250,7 +125,7 @@
         <counts>
           <entry key="Python Console" value="52" />
           <entry key="css" value="79" />
-          <entry key="py" value="52488" />
+          <entry key="py" value="52676" />
           <entry key="sql" value="56" />
           <entry key="txt" value="6" />
         </counts>
@@ -259,7 +134,7 @@
         <counts>
           <entry key="CSS" value="79" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="52540" />
+          <entry key="Python" value="52728" />
           <entry key="Scratch" value="56" />
         </counts>
       </usages-collector>
@@ -300,10 +175,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="36" selection-start-column="36" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1334">
-              <caret line="474" column="40" selection-start-line="474" selection-start-column="40" selection-end-line="474" selection-end-column="40" />
+            <state relative-caret-position="44">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -312,12 +208,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models.py">
+        <entry file="file://$PROJECT_DIR$/Registration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="792">
+              <caret line="206" column="57" selection-start-line="206" selection-start-column="57" selection-end-line="206" selection-end-column="57" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Profile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -379,9 +287,7 @@
         <option value="$PROJECT_DIR$/face/dataSetCreator.py" />
         <option value="$PROJECT_DIR$/recap.py" />
         <option value="$PROJECT_DIR$/datasetcheck.py" />
-        <option value="$PROJECT_DIR$/Profile.py" />
         <option value="$PROJECT_DIR$/authenticatecd.py" />
-        <option value="$PROJECT_DIR$/Registration.py" />
         <option value="$PROJECT_DIR$/tests.py" />
         <option value="$PROJECT_DIR$/attendancestats_all.py" />
         <option value="$PROJECT_DIR$/busyboxgraph.py" />
@@ -395,6 +301,9 @@
         <option value="$PROJECT_DIR$/authentication_form.py" />
         <option value="$PROJECT_DIR$/models.py" />
         <option value="$PROJECT_DIR$/controller.py" />
+        <option value="$PROJECT_DIR$/Registration.py" />
+        <option value="$PROJECT_DIR$/Profile.py" />
+        <option value="$PROJECT_DIR$/config.py" />
       </list>
     </option>
   </component>
@@ -605,6 +514,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44468084" visible="true" weight="0.2560606" />
       <window_info id="Structure" order="1" sideWeight="0.55531913" side_tool="true" weight="0.2659091" />
@@ -612,7 +522,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32137287" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.26604068" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.26604068" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3987441" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -620,7 +530,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.21596244" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21596244" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.32917318" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32917318" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -665,25 +575,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/controller.py</url>
-          <line>224</line>
+          <line>225</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/controller.py</url>
-          <line>256</line>
+          <line>257</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/face/trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/profilepics/2.jpg" />
     <entry file="file://$PROJECT_DIR$/profilepics/3.jpg" />
     <entry file="file://$PROJECT_DIR$/profilepics/4.jpg" />
@@ -818,20 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProfileView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/authenticatecd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -909,31 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Registration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RegistrationWindow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1365">
           <caret line="340" column="49" selection-start-line="340" selection-start-column="49" selection-end-line="340" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Profile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="501" column="16" selection-start-line="501" selection-start-column="16" selection-end-line="501" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EmployeeView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="946" column="110" selection-start-line="946" selection-start-column="110" selection-end-line="946" selection-end-column="110" />
         </state>
       </provider>
     </entry>
@@ -965,28 +833,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-591" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="375">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-591" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="474" column="40" selection-start-line="474" selection-start-column="40" selection-end-line="474" selection-end-column="40" />
+        <state relative-caret-position="44">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EmployeeView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="946" column="110" selection-start-line="946" selection-start-column="110" selection-end-line="946" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProfileView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Registration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="206" column="57" selection-start-line="206" selection-start-column="57" selection-end-line="206" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Profile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
         </state>
       </provider>
     </entry>
