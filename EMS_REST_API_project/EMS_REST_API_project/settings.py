@@ -98,9 +98,9 @@ WSGI_APPLICATION = 'EMS_REST_API_project.wsgi.application'
 
 DATABASES = {
     'default':{
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'ems_db',
-        'USER': 'root',
+        'USER': 'postgres',
         'PASSWORD': 'longview048',
         'HOST': 'localhost',
         'PORT': '',

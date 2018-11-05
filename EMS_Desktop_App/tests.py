@@ -244,8 +244,8 @@ def register():
 #
 # print(x.split(','))
 
-# print(db.record_attendance(17, 'clock-in', 'longview048'))
-# print(db.record_attendance(16, 'clock-in', 'longview048'))
+print(db.record_attendance(2, 'clock-out', 'longview048'))
+print(db.record_attendance(3, 'clock-out', 'what the fuck'))
 
-x = db.master_verify('qzwxecdsa')
-print(x)
+# x = db.master_verify('qzwxecdsa')
+# print(x)

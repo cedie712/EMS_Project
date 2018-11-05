@@ -55,7 +55,7 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
         self.user_id = user_id
         self.emp_logs = self.fetch_salary_logs()
 
-        for i in self.emp_logs[::-1]:
+        for i in self.emp_logs:
             btn_text = '  Current'
             if i['is_released']:
                 start_date = i['period'].split(' - ')[0]

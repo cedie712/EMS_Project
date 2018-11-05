@@ -17,7 +17,7 @@ def clock_out():
     print(db.record_attendance(3, 'clock-out', 'what the fuck'))
 
 
-for i in range(178):
+for i in range(186):
     if i == 0:
         now = datetime.now()+ timedelta(days=1)
 

@@ -59,7 +59,7 @@ class AttendanceLogView(viewsets.ModelViewSet):
 class SalaryReportView(viewsets.ModelViewSet):
     serializer_class = SalaryReportSerializer
     permission_classes = (permissions.IsAuthenticated and permissions.IsAdminUser,)
-    queryset = SalaryReport.objects.all()
+    queryset = SalaryReport.objects.all().order_by('-id')
 
 
 class GlobalConfigView(viewsets.ModelViewSet):
@@ -254,8 +254,6 @@ def overtime_check():
         employee_salary.save()
 
     print('overtime check done')
-
-
 
 
 def check_attendance_status():
