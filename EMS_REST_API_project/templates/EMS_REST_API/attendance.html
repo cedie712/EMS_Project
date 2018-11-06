@@ -14,9 +14,10 @@
               Employees' Attendance Logs</h4></div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-striped" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-striped" id="dataTable-attendance" width="100%" cellspacing="0">
                   <thead>
                     <tr>
+                      <th>Attendance ID</th>
                       <th>Time-In</th>
                       <th>Time-Out</th>
                       <th>Name</th>
@@ -26,6 +27,7 @@
                   <tbody>
                   {% for i in attendance_logs %}
                     <tr>
+                      <td>{{ i.idx }}</td>
                       <td>{{ i.time_in }}</td>
                       <td>{{ i.time_out }}</td>
                       <td>{{ i.name }}</td>
@@ -45,9 +47,10 @@
               Employees' Attendance Logs</h4></div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-striped" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-striped" id="dataTable-attendance" width="100%" cellspacing="0">
                   <thead>
                     <tr>
+                      <th>Attendance ID</th>
                       <th>Time-In</th>
                       <th>Time-Out</th>
                     </tr>
@@ -55,6 +58,7 @@
                   <tbody>
                   {% for i in attendance_logs %}
                     <tr>
+                      <td>{{ i.idx }}</td>
                       <td>{{ i.time_in }}</td>
                       <td>{{ i.time_out }}</td>
                     </tr>

@@ -6,12 +6,18 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('#dataTable-salary').DataTable({
-        "order": [ 1, "desc" ],
+        "order": [ 0, "desc" ],
     } );
 });
 
 $(document).ready(function() {
   $('#dataTable-salary-all').DataTable({
-        "order": [ 3, "desc" ],
+        "order": [ 0, "desc" ],
+    } );
+});
+
+$(document).ready(function() {
+  $('#dataTable-attendance').DataTable({
+        "order": [ 0, "desc" ],
     } );
 });

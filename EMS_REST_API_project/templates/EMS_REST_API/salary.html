@@ -17,6 +17,7 @@
                 <table class="table table-striped" id="dataTable-salary-all" width="100%" cellspacing="0">
                   <thead>
                     <tr>
+                      <th>Salary Log ID</th>
                       <th>ID</th>
                       <th>Name</th>
                       <th>Period</th>
@@ -38,6 +39,7 @@
                   <tbody>
                   {% for i in salary_logs %}
                     <tr>
+                      <td>{{ i.idx }}</td>
                       <td>{{ i.gcc_id }}</td>
                       <td>{{ i.emp_name }}</td>
                       <td>{{ i.period }}</td>
@@ -72,6 +74,7 @@
                 <table class="table table-striped" id="dataTable-salary" width="100%" cellspacing="0">
                   <thead>
                     <tr>
+                      <th>Salary Log ID</th>
                       <th>Period</th>
                       <th>Status</th>
                       <th>Total Time</th>
@@ -91,6 +94,7 @@
                   <tbody>
                   {% for i in salary_logs %}
                     <tr>
+                      <td>{{ i.idx }}</td>
                       <td>{{ i.period }}</td>
                       <td>{{ i.status }}</td>
                       <td>{{ i.total_time }}</td>
