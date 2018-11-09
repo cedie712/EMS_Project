@@ -237,7 +237,7 @@ def release_salary(date_time):
             i.period = period
             i.is_released = True
             i.save()
-            # notify_salary_release()
+            notify_salary_release()
     print('salary release check done')
 
 
