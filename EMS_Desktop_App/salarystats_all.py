@@ -69,7 +69,7 @@ class SalaryGraph(QtGui.QWidget):
 
     def get_salary_stat(self):
         db = EMS_db_model()
-        logs = db.get_salary_log()
+        logs = db.get_salary_log()[::-1]
         if len(logs) == 0:
             QtGui.QMessageBox.information(self, 'Note',
                                           'There are no salary logs to plot', None)

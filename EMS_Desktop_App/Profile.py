@@ -435,6 +435,10 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
             QtGui.QMessageBox.information(self, 'Note', 'complete the fields', None)
             return 0
 
+        if len(self.contact_txt.text()) != 10:
+            title = 'Failed'
+            msg = 'Please enter a correct contact number. eg. 9xxxxxxxxx'
+            return QtGui.QMessageBox.information(self, title, msg, None)
 
         content = {
             'id': self.user_id,

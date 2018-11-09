@@ -154,6 +154,11 @@ class RegisterWindow(QtGui.QMainWindow, RegistrationWindow.Ui_RegisterWindow):
                 msg = 'Complete the Fields'
                 return QtGui.QMessageBox.information(self, title, msg, None)
 
+        if len(self.contact_txt.text()) != 10:
+            title = 'Failed'
+            msg = 'Please enter a correct contact number. eg. 9xxxxxxxxx'
+            return QtGui.QMessageBox.information(self, title, msg, None)
+
         if len(dayoff.split(',')) > 4:
             title = 'Failed'
             msg = 'Maximum of 3 day-offs are allowed'

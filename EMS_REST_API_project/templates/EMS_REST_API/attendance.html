@@ -14,24 +14,24 @@
               Employees' Attendance Logs</h4></div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-striped" id="dataTable-attendance" width="100%" cellspacing="0">
+                <table class="table table-striped" id="dataTable-attendance-all" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>Attendance ID</th>
+                      <th>Name</th>
                       <th>Time-In</th>
                       <th>Time-Out</th>
-                      <th>Name</th>
                       <th>ID</th>
+                      <th>Attendance ID</th>
                     </tr>
                   </thead>
                   <tbody>
                   {% for i in attendance_logs %}
                     <tr>
-                      <td>{{ i.idx }}</td>
+                      <td>{{ i.name }}</td>
                       <td>{{ i.time_in }}</td>
                       <td>{{ i.time_out }}</td>
-                      <td>{{ i.name }}</td>
                       <td>{{ i.id }}</td>
+                      <td>{{ i.idx }}</td>
                     </tr>
                   {% endfor %}
                   </tbody>
@@ -50,17 +50,17 @@
                 <table class="table table-striped" id="dataTable-attendance" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>Attendance ID</th>
                       <th>Time-In</th>
                       <th>Time-Out</th>
+                      <th>Attendance ID</th>
                     </tr>
                   </thead>
                   <tbody>
                   {% for i in attendance_logs %}
                     <tr>
-                      <td>{{ i.idx }}</td>
                       <td>{{ i.time_in }}</td>
                       <td>{{ i.time_out }}</td>
+                      <td>{{ i.idx }}</td>
                     </tr>
                   {% endfor %}
                   </tbody>

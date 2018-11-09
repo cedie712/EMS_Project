@@ -60,10 +60,16 @@ class AttendanceGraph(QtGui.QWidget):
             y_absences_smooth = spline(x, y_absences, x_smooth)
 
             # graph.plot(x, y_presences, linestyle=' ', marker='o', color='blue')
-            graph.plot(x_smooth, y_presences_smooth, label='average presence count', color='blue')
+            # graph.plot(x_smooth, y_presences_smooth, label='average presence count', color='blue')
 
             # graph.plot(x, y_absences, linestyle=' ', marker='o', color='orange')
-            graph.plot(x_smooth, y_absences_smooth, label='average absence count', color='orange')
+            # graph.plot(x_smooth, y_absences_smooth, label='average absence count', color='orange')
+
+            graph.plot(x, y_presences, linestyle=' ', marker='o', color='blue')
+            graph.plot(logs['key'], logs['attendance_ave'], label='average presence count', color='blue')
+
+            graph.plot(x, y_absences, linestyle=' ', marker='o', color='orange')
+            graph.plot(logs['key'], logs['absence_ave'], label='average absence count', color='orange')
 
             graph.grid(linestyle='-')
             graph.legend(loc='upper left')
