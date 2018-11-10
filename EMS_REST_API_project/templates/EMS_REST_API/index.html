@@ -26,7 +26,12 @@
         <br>
         <h6 class="text-secondary">Change Profile Photo:</h6>
     <input class="form-control-sm input-length-md text-secondary" type="file" name="picture" required><br><br>
-        <input type="submit" class="btn btn-info" value="Update Profile Photo">
+        <input type="submit" class="btn btn-info" value="Update Profile Photo"><br><br>
+        {% if image_error %}
+            <script>
+                document.write('<div class="alert alert-danger">{{ image_error }}</div>');
+            </script>
+        {% endif %}
     </form>
 
 

@@ -17,7 +17,7 @@ import pytz
 time_zone = pytz.timezone('Asia/Manila')
 import requests
 from requests.auth import HTTPBasicAuth
-
+from PIL import Image
 
 # website views
 def get_employee_object(user):
@@ -75,7 +75,7 @@ def user_logout(request):
 
 
 @ login_required
-def index(request):
+def index(request, img_response=None):
     user_object = User.objects.get(username=request.user)
     try:
         employee_object = get_employee_object(request.user)
@@ -84,6 +84,7 @@ def index(request):
         return HttpResponseRedirect('/emswebext/login/')
     gcc_id = convert_id(employee_object.id, str(employee_object.start_date)[:4])
     context = {
+        'image_error': img_response,
         'user_object': user_object,
         'employee_object': employee_object,
         'employee_profile': get_employee_profile(employee_object.pk),
@@ -356,9 +357,13 @@ def update_photo(request):
         profile = get_employee_profile(employee_object.pk)
 
         if 'picture' in request.FILES:
-            profile.profile_photo = request.FILES['picture']
-
-        profile.save()
+            try:
+                test = Image.open(request.FILES['picture'])
+                test.verify()
+                profile.profile_photo = request.FILES['picture']
+                profile.save()
+            except:
+                return index(request, img_response='Invalid image format')
 
     return HttpResponseRedirect('/emswebext/index/')
 
@@ -438,7 +443,7 @@ def update_global_config(request):
 
         # UPDATE THIS WHEN YOU UPLOAD AT HOST
         requests.post('http://localhost:8000/updateGlobalConfig/', data=content,
-                      auth=HTTPBasicAuth(username='cedrick', password='qzwxec=-0dsa'))
+                      auth=HTTPBasicAuth(username='cedrick', password='longview048'))
 
         update_success = 'ok'
         return global_config(request, update_response=update_success)
