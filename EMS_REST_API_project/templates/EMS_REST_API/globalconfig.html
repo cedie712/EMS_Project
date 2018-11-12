@@ -21,10 +21,10 @@
             {% if config %}
                 <div class="row">
 
-                <div class="col-sm-6">
+                <div class="col-sm-4">
 
                 <h5><b>Cut-Offs:</b><br>
-                 <select class="form-control-sm" name="cutoff">
+                 <select class="form-control" name="cutoff">
                      {% if config.first_cutoff == 5 %}
                          <option value="5" selected>5th and 20th day of the month</option>
                          <option value="10">10th and 25th day of the month</option>
@@ -42,26 +42,27 @@
                 </h5><br>
 
                 <h5><b>Level 1 Rate:</b><br>PHP
-                <input type="number" class="form-control-sm" name="level_1_rate" id="level_1_rate"
+                <input type="number" class="form-control" name="level_1_rate" id="level_1_rate"
                                value="{{ config.level_1_rate }}" required>
                 </h5><br>
 
                 <h5><b>Level 2 Rate:</b><br>PHP
-                <input type="number" class="form-control-sm" name="level_2_rate" id="level_2_rate"
+                <input type="number" class="form-control" name="level_2_rate" id="level_2_rate"
                                value="{{ config.level_2_rate }}" required>
                 </h5><br>
 
                 <h5><b>Level 3 Rate:</b><br>PHP
-                <input type="number" class="form-control-sm" name="level_3_rate" id="level_3_rate"
+                <input type="number" class="form-control" name="level_3_rate" id="level_3_rate"
                                value="{{ config.level_3_rate }}" required>
                 </h5><br>
 
                 <h5><b>Overtime Rate:</b><br>
-                <input type="number" class="form-control-sm" name="ot_rate" id="ot_rate"
+                <input type="number" class="form-control" name="ot_rate" id="ot_rate"
                                value="{{ config.overtime_rate }}" required>
                 </h5><br>
                 </div>
-
+                <div class="col-sm-2">
+                </div>
                 <div class="col-sm-6">
 
                      <h5><b>SSS Payment:</b><br>
@@ -117,12 +118,15 @@
                              <span class="text-danger">disabled</span>
                          {% endif %}
                     </h5><br>
-
-                        <button type="reset" class="btn btn-info">Undo Changes</button>
-
-                        <button type="submit" class="btn btn-success">Update Configurations</button>
-
-                <br><br>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <button type="reset" class="btn btn-info">Undo Changes</button><br><br>
+                        </div>
+                        <div class="col-sm-9">
+                            <button type="submit" class="btn btn-success">Update Configurations</button>
+                        </div>
+                    </div>
+                <br>
                     {% if update_response %}
                         {% if update_response == 'ok'%}
                         <script>

@@ -443,7 +443,7 @@ def update_global_config(request):
 
         # UPDATE THIS WHEN YOU UPLOAD AT HOST
         requests.post('http://localhost:8000/updateGlobalConfig/', data=content,
-                      auth=HTTPBasicAuth(username='cedrick', password='longview048'))
+                      auth=HTTPBasicAuth(username='cedrick', password='changeme'))
 
         update_success = 'ok'
         return global_config(request, update_response=update_success)

@@ -63,35 +63,35 @@
                     <h4 class="modal-header text-secondary">Profile Information</h4>
 
                     <h5 class="text-capitalize"><b>First Name:</b><br>
-                        <input type="text" class="letters input-length-md form-control-sm"
+                        <input type="text" class="letters input-length-md form-control"
                                name="first_name" id="first_name"
                                pattern="[a-zA-Z ]+" value="{{ employee_object.first_name }}" required></h5><br>
 
                     <h5 class="text-capitalize"><b>Middle Name:</b><br>
-                        <input type="text" class="letters input-length-md form-control-sm"
+                        <input type="text" class="letters input-length-md form-control"
                                name="middle_name" id="middle_name"
                                pattern="[a-zA-Z ]+" value="{{ employee_object.middle_name }}" required></h5><br>
 
                     <h5 class="text-capitalize"><b>Last Name: </b><br>
-                        <input type="text" class="letters input-length-md form-control-sm"
+                        <input type="text" class="letters input-length-md form-control"
                                name="last_name" id="last_name"
                                pattern="[a-zA-Z ]+" value="{{ employee_object.last_name }}" required></h5><br>
 
                     <h5><b>Gmail:</b><br> {{ user_object.email }}</h5><br>
 
                     <h5 class="text-capitalize"><b>Contact:</b><br>
-                        <input type="text" class="integers input-length-md form-control-sm"
+                        <input type="text" class="integers input-length-md form-control"
                                name="contact_number" id="contact_number"
                                pattern="^9(?!(000000000))\d{9}$"
                                value="{{ employee_profile.contact_number }}" required></h5><br>
 
                     <h5 class="text-capitalize"><b>Address:</b><br>
-                        <input type="text" class="input-length-md form-control-sm" name="address" id="address"
+                        <input type="text" class="input-length-md form-control" name="address" id="address"
                                value="{{ employee_profile.address }}" required></h5><br>
 
                     <h5 class="text-capitalize"><b>Birthday: </b><br>
                         <input type="date"  value="{{ employee_profile.birthday }}"
-                               class="form-control-sm" name="birthday" id="birthday"></h5><br>
+                               class="form-control" name="birthday" id="birthday"></h5><br>
 
                     <h5 class="text-capitalize"><b>Gender:</b>&nbsp;
                         {% if employee_profile.gender == 'male' %}
@@ -115,7 +115,7 @@
                     <h4 class="modal-header text-secondary">Job Information</h4>
 
                     <h5 class="text-capitalize"><b>Position:</b><br>
-                        <select class="form-control-sm" name="position">
+                        <select class="form-control" name="position">
 
                             {% if employee_object.is_admin%}
 
@@ -132,7 +132,7 @@
                     </h5><br>
 
                     <h5 class="text-capitalize"><b>Rate:</b><br>
-                        <select class="form-control-sm" name="rate_per_hour">
+                        <select class="form-control" name="rate_per_hour">
 
                             {% if employee_config.rate_per_hour == global_config.level_1_rate %}
 
@@ -199,25 +199,25 @@
                     </h5><br>
 
                     <h5><b>SSS Number:</b><br>
-                    <input type="text" class="numdash form-control-sm" name="sss_number" id="sss_number"
+                    <input type="text" class="numdash form-control" name="sss_number" id="sss_number"
                            pattern="^(?!(0000))\d{4}-(?!0000000)\d{7}-(?!0000)\d{4}$"
                            value="{{ employee_config.sss_number }}" required>
                     </h5><br>
 
                     <h5><b>PHILHEALTH Number:</b><br>
-                    <input type="text" class="numdash form-control-sm" name="philhealth_number" id="philhealth_number"
+                    <input type="text" class="numdash form-control" name="philhealth_number" id="philhealth_number"
                            pattern="^(?!(00))\d{2}-(?!(000000000))\d{9}-(?!(0))\d{1}$"
                                value="{{ employee_config.philhealth_number }}" required>
                     </h5><br>
 
                     <h5><b>PAGIBIG Number:</b><br>
-                    <input type="text" class="numdash form-control-sm" name="pagibig_number" id="pagibig_number"
+                    <input type="text" class="numdash form-control" name="pagibig_number" id="pagibig_number"
                            pattern="^(?!(0000))\d{4}-(?!(0000))\d{4}-(?!(0000))\d{4}$"
                                value="{{ employee_config.pagibig_number }}" required>
                     </h5><br>
 
                     <h5><b>TIN:</b><br>
-                    <input type="text" class="numdash form-control-sm" name="tin_number" id="tin_number"
+                    <input type="text" class="numdash form-control" name="tin_number" id="tin_number"
                            pattern="^(?!(000))\d{3}-(?!(000))\d{3}-(?!(000))\d{3}-(?!(00000))\d{5}$"
                                 value="{{ employee_config.tin_number }}" required>
                     </h5><br>
@@ -236,11 +236,15 @@
                     </h5><br>
 
 
-
-                            <button type="reset" class="btn btn-info">Undo Changes</button>
-
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <button type="reset" class="btn btn-info">Undo Changes</button><br><br>
+                        </div>
+                        <div class="col-sm-8">
                             <button type="submit" id="update" class="btn btn-success">Update Information</button>
-                    <br><br>
+                        </div>
+                    </div>
+                    <br>
                     {% if update_response %}
                         {% if update_response == 'ok'%}
                         <script>
@@ -254,6 +258,7 @@
                     {% endif %}
 
                     </div>
+            <br><br>
 
 
         {% endif %}
