@@ -23,12 +23,16 @@
     padding-top: 150px;
 }
 
+.text-white-dirty{
+    color: #d8d8d8;
+}
+
 .text-orange{
     color: orange;
 }
 
 .text-blue{
-    color: #113bb1;
+    color: #339e8c;
 }
 
 .text-red{
@@ -145,6 +149,6 @@ th, td {
     margin: 0 60px 0 10px;
 }
 #cookieConsent a.cookieConsentOK:hover {
-    background-color: #55e027;
+    background-color: #af781e;
 }
 /*Cookie Consent End*/
