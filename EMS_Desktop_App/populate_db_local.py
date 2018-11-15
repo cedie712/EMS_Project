@@ -17,7 +17,7 @@ def clock_out():
     print(db.record_attendance(3, 'clock-out', 'what the fuck'))
 
 
-for i in range(186):
+for i in range(206):
     if i == 0:
         now = datetime.now()+ timedelta(days=1)
 
@@ -42,7 +42,10 @@ for i in range(186):
 
             subprocess.call(shlex.split("sudo date -s '%s'" % date_str))
             subprocess.call(shlex.split("sudo hwclock -w"))
-            clock_in()
+
+            if i % 7 != 0:
+                clock_in()
+
             print('first')
         else:
             now = datetime.now() + timedelta(hours=8)
@@ -51,8 +54,9 @@ for i in range(186):
 
             subprocess.call(shlex.split("sudo date -s '%s'" % date_str))
             subprocess.call(shlex.split("sudo hwclock -w"))
-            clock_out()
 
+            if i % 7 != 0:
+                clock_out()
 
             yearint = int(datetime.now().year)
 
