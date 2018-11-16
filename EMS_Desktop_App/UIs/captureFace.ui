@@ -26,22 +26,16 @@
      <height>35</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <family>Arial</family>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="focusPolicy">
     <enum>Qt::NoFocus</enum>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: #fff;
+background-color: rgb(21, 141, 141);
+font: 14px/20px &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;</string>
+   </property>
    <property name="text">
     <string>Re-Capture</string>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>../icons/facerecoglogo.png</normaloff>../icons/facerecoglogo.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -78,22 +72,16 @@
      <height>35</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <family>Arial</family>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="focusPolicy">
     <enum>Qt::NoFocus</enum>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: #fff;
+background-color: rgb(0, 156, 5);
+font: 14px/20px &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;</string>
+   </property>
    <property name="text">
     <string>ok, it's good</string>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>../icons/Check-mark.png</normaloff>../icons/Check-mark.png</iconset>
    </property>
    <property name="iconSize">
     <size>

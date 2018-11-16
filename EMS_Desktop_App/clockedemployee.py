@@ -34,7 +34,8 @@ class ClockedEmployeeWindow(QtGui.QMainWindow, ClockedinView.Ui_ClockedEmployee)
                 btn_text = '  ' + sp.convert_id(i['id'], i['start_date'][:4]) \
                            + '   %s, %s %s' % (i['last_name'], i['first_name'], i['middle_name'])
                 btn_link = QtGui.QPushButton(btn_text, self.scrollArea)
-                btn_link.setStyleSheet("QPushButton { text-align: left; }")
+                btn_link.setStyleSheet("text-align: left;\n color: #fff;\n"
+                                       "background-color: rgb(21, 141, 141);")
                 btn_link.clicked.connect(partial(self.grep_profile, i['id']))
                 self.scrollLayout.addWidget(btn_link)
                 self.scrollArea.setWidget(self.scrollContent)

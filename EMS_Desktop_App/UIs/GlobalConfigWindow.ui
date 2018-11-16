@@ -380,23 +380,16 @@
       <height>41</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>14</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="focusPolicy">
      <enum>Qt::TabFocus</enum>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 14px;
+color: #fff;
+background-color: rgb(229, 21, 21);</string>
+    </property>
     <property name="text">
      <string>Cancel</string>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../icons/close.png</normaloff>../icons/close.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -414,23 +407,16 @@
       <height>41</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>14</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="focusPolicy">
      <enum>Qt::TabFocus</enum>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+background-color: rgb(0, 156, 5);
+font: 14px/20px &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;</string>
+    </property>
     <property name="text">
      <string>Update</string>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../icons/recs.png</normaloff>../icons/recs.png</iconset>
     </property>
     <property name="iconSize">
      <size>

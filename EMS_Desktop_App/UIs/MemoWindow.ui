@@ -27,23 +27,16 @@
       <height>41</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>14</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="focusPolicy">
      <enum>Qt::NoFocus</enum>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+background-color: rgb(0, 156, 5);
+font: 14px/20px &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;</string>
+    </property>
     <property name="text">
      <string>Post</string>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../icons/upload-icon-32.png</normaloff>../icons/upload-icon-32.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -147,7 +140,7 @@
      <rect>
       <x>60</x>
       <y>310</y>
-      <width>471</width>
+      <width>431</width>
       <height>33</height>
      </rect>
     </property>
@@ -164,19 +157,42 @@
       <height>41</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>14</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 14px;
+color: #fff;
+background-color: rgb(229, 21, 21);
+</string>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_clear">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>300</y>
+      <width>41</width>
+      <height>51</height>
+     </rect>
     </property>
     <property name="focusPolicy">
      <enum>Qt::NoFocus</enum>
     </property>
+    <property name="styleSheet">
+     <string notr="true">border: None;</string>
+    </property>
     <property name="text">
-     <string>Cancel</string>
+     <string/>
     </property>
     <property name="icon">
      <iconset>

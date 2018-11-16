@@ -66,7 +66,8 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
                 end_date = end_date.strftime("%b %d, %Y")
                 btn_text = "  %s - %s" % (start_date, end_date)
             btn_link = QtGui.QPushButton(btn_text, self.scrollArea)
-            btn_link.setStyleSheet("QPushButton { text-align: left; }")
+            btn_link.setStyleSheet("text-align: left;\n color: #fff;\n"
+                                   "background-color: rgb(5, 101, 255);")
             btn_link.clicked.connect(partial(self.populate_report, i['id'], btn_text))
             self.scrollLayout.addWidget(btn_link)
             self.scrollArea.setWidget(self.scrollContent)

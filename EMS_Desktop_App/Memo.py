@@ -16,6 +16,7 @@ class MemoWindow(QtGui.QMainWindow, MemoView.Ui_MemoWindow):
         self.upload_btn.clicked.connect(self.post)
 
         self.cancel_btn.clicked.connect(self.cancel)
+        self.toolButton_clear.clicked.connect(self.clear_img_field)
 
         self.setWindowModality(QtCore.Qt.ApplicationModal)
 
@@ -45,3 +46,7 @@ class MemoWindow(QtGui.QMainWindow, MemoView.Ui_MemoWindow):
         self.memo_text.clear()
         self.image_text.setText("Attach an Image")
         self.hide()
+
+
+    def clear_img_field(self):
+        self.image_text.clear()

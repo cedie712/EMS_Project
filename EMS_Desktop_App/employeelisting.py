@@ -38,12 +38,12 @@ class EmployeeListView(QtGui.QMainWindow, EmployeeList.Ui_EmployeeList):
             btn_link = QtGui.QPushButton(btn_text, self.scrollArea)
             if i['is_active']:
                 active_count += 1
-                btn_link.setStyleSheet("QPushButton { text-align: left;}"
-                                       + "QPushButton {background-color: #7fdb12;}")
+                btn_link.setStyleSheet("text-align: left;\n color: #fff;\n"
+                                       "background-color: rgb(0, 156, 5);")
             else:
                 inactive_count += 1
-                btn_link.setStyleSheet("QPushButton { text-align: left;}"
-                                       + "QPushButton {background-color: #ffac1d;}")
+                btn_link.setStyleSheet("text-align: left;\n color: #fff;\n"
+                                       "background-color: rgb(209, 51, 51);")
             btn_link.clicked.connect(partial(self.grep_profile, i['id']))
             self.scrollLayout.addWidget(btn_link)
             self.scrollArea.setWidget(self.scrollContent)

@@ -185,7 +185,9 @@ class Ui_HelpWindow(object):
         self.pushButton_reset_pass = QtGui.QPushButton(self.centralwidget)
         self.pushButton_reset_pass.setGeometry(QtCore.QRect(120, 440, 141, 35))
         self.pushButton_reset_pass.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.pushButton_reset_pass.setStyleSheet(_fromUtf8("color: green;"))
+        self.pushButton_reset_pass.setStyleSheet(_fromUtf8("color: #fff;\n"
+"background-color: rgb(0, 156, 5);\n"
+"font: 14px/20px \"Helvetica Neue\",Helvetica,Arial,sans-serif;"))
         self.pushButton_reset_pass.setObjectName(_fromUtf8("pushButton_reset_pass"))
         self.label_21 = QtGui.QLabel(self.centralwidget)
         self.label_21.setGeometry(QtCore.QRect(30, 420, 71, 71))
@@ -244,7 +246,7 @@ class Ui_HelpWindow(object):
         self.label_15.setText(_translate("HelpWindow", "* Register Employee    Ctrl+R", None))
         self.label_17.setText(_translate("HelpWindow", "* Employees\' Information and Logs    Ctrl+Y", None))
         self.label_19.setText(_translate("HelpWindow", "* Global Configurations    Ctrl+W", None))
-        self.pushButton_reset_pass.setText(_translate("HelpWindow", "Reset Password", None))
+        self.pushButton_reset_pass.setText(_translate("HelpWindow", "Forgot Password?", None))
         self.label_22.setText(_translate("HelpWindow", "Commands with \'*\' prefix are only for users with administrative capability.", None))
         self.label_23.setText(_translate("HelpWindow", "Note:", None))
         self.label_25.setText(_translate("HelpWindow", "* Memo   Ctrl+M", None))

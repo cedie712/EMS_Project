@@ -434,10 +434,12 @@
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: green;</string>
+     <string notr="true">color: #fff;
+background-color: rgb(21, 141, 141);
+font: 14px/20px &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;</string>
     </property>
     <property name="text">
-     <string>Reset Password</string>
+     <string>Forgot Password?</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_21">
