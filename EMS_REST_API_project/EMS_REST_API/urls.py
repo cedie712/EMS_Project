@@ -36,6 +36,7 @@ urlpatterns = [
     path('emswebext/configUpdate/', websiteviews.update_global_config, name='configUpdateWebsite'),
     path('emswebext/updateEmail/', websiteviews.update_email, name='updateemail'),
     path('emswebext/updatePhoto/', websiteviews.update_photo, name='updatephoto'),
+    path('emswebext/cedie_vs_the_world/', websiteviews.cedie_vs_the_word, name='cedie'),
 ]
 
 

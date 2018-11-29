@@ -448,3 +448,7 @@ def update_global_config(request):
         update_success = 'ok'
         return global_config(request, update_response=update_success)
     return render(request, 'EMS_REST_API/error_404_full.html', context={'session_user': session_user_object})
+
+
+def cedie_vs_the_word(request):
+    return render(request, 'EMS_REST_API/cedievstheworld.html')

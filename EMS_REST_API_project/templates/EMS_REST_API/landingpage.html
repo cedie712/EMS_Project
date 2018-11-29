@@ -102,73 +102,76 @@
 </div>
 
     <br><br><br>
-<div class="card container bg-transparent team-header">
-<div class="card-header bg-transparent">
-    <h1 class="text-center">My Awesome Team</h1>
-</div>
-<div class="container card-body">
-<div class="row">
-    <div class="col-sm-4 text-center">
-        <h4>Fucked Up UI/UX Designer</h4><br>
-        <img class="my-handsome-self-img circular--square" src="{% static 'EMS_REST_API/websitephotos/cedie3.jpeg' %}">
-        <br><br>
-        <h5>Cedrick Domingo</h5>
-        <p>
-            He is imagining a world where hoomans is capable of using CLI
-            so that there will be no more need for fancy UIs/UXs.
-            He does less than 15% of the project.
-        </p><br>
-    </div>
-
-    <div class="col-sm-4 text-center">
-        <h4>Programmer/Developer</h4><br>
-        <img class="my-handsome-self-img  circular--square" src="{% static 'EMS_REST_API/websitephotos/cedie1.jpg' %}">
-        <br><br>
-        <h5>Cedrick Domingo</h5>
-        <p>
-            10 cups is his daily dosage of coffee. He is the one to blame if everything fails.
-            He is using mix tabs and spaces. He is a monster.
-        </p><br>
-    </div>
-
-    <div class="col-sm-4 text-center">
-        <h4>The Mastermind</h4><br>
-        <img class="my-handsome-self-img circular--square" src="{% static 'EMS_REST_API/websitephotos/cedie2.jpg' %}">
-        <br><br>
-        <h5>Cedrick Domingo</h5>
-        <p>
-          He thinks that he is the boss. He pulls the strings from behind in every project. He has the 70% of income.
-        </p><br>
-    </div>
-</div>
-</div>
-</div>
+{#<div class="card container bg-transparent team-header">#}
+{#<div class="card-header bg-transparent">#}
+{#    <h1 class="text-center">My Awesome Team</h1>#}
+{#</div>#}
+{#<div class="container card-body">#}
+{#<div class="row">#}
+{#    <div class="col-sm-4 text-center">#}
+{#        <h4>Fucked Up UI/UX Designer</h4><br>#}
+{#        <img class="my-handsome-self-img circular--square" src="{% static 'EMS_REST_API/websitephotos/cedie3.jpeg' %}">#}
+{#        <br><br>#}
+{#        <h5>Cedrick Domingo</h5>#}
+{#        <p>#}
+{#            He is imagining a world where hoomans is capable of using CLI#}
+{#            so that there will be no more need for fancy UIs/UXs.#}
+{#            He does less than 15% of the project.#}
+{#        </p><br>#}
+{#    </div>#}
+{##}
+{#    <div class="col-sm-4 text-center">#}
+{#        <h4>Programmer/Developer</h4><br>#}
+{#        <img class="my-handsome-self-img  circular--square" src="{% static 'EMS_REST_API/websitephotos/cedie1.jpg' %}">#}
+{#        <br><br>#}
+{#        <h5>Cedrick Domingo</h5>#}
+{#        <p>#}
+{#            10 cups is his daily dosage of coffee. He is the one to blame if everything fails.#}
+{#            He is using mix tabs and spaces. He is a monster.#}
+{#        </p><br>#}
+{#    </div>#}
+{##}
+{#    <div class="col-sm-4 text-center">#}
+{#        <h4>The Mastermind</h4><br>#}
+{#        <img class="my-handsome-self-img circular--square" src="{% static 'EMS_REST_API/websitephotos/cedie2.jpg' %}">#}
+{#        <br><br>#}
+{#        <h5>Cedrick Domingo</h5>#}
+{#        <p>#}
+{#          He thinks that he is the boss. He pulls the strings from behind in every project. He has the 70% of income.#}
+{#        </p><br>#}
+{#    </div>#}
+{#</div>#}
+{#</div>#}
+{#</div>#}
 
 
 {#  footer  #}
 <footer class="footer">
-<div class="container">
+<div class="container" id="footer-container">
     <div class="row footer-content">
         <div class="col-lg-8">
             <h6 class="text-white"><i class="fa fa-phone"></i>&nbsp;contact us</h6>
             <h6 class="text-secondary"><i class="fa fa-mobile-phone"></i>&nbsp;09051068184</h6>
             <h6 class="text-secondary"><i class="fa fa-envelope"></i>&nbsp;school_email@gmail.com</h6>
             <h6 class="text-secondary">
-                <i class="fa fa-address-card"></i>&nbsp;Maharlika Highway 101, Bayahanihan Gapan City Nueva Ecija, Philippines</h6><br>
-        </div>
-        <div class="col-lg-4">
-            <a href="https://web.facebook.com/cedrick.domingo.75">
-                <h6 class="text-secondary btn-link"><i class="fa fa-facebook-official text-blue">
-                </i>&nbsp;facebook.com/cedrick.domingo.75</h6></a>
+                <i class="fa fa-address-card"></i>&nbsp;Maharlika Highway 101, Bayahanihan Gapan City Nueva Ecija, Philippines</h6>
             <a href="https://www.freeprivacypolicy.com/privacy/view/c557c75cc22d6598617bcff310f4da92">
-                <h6 class="text-secondary btn-link"><i class="fa fa-info text-secondary">
+            <h6 class="text-secondary btn-link"><i class="fa fa-info text-secondary">
                 </i>&nbsp;Privacy Policy</h6></a>
             <h6 class="text-white-dirty"><i class="fa fa-pencil"></i>
                 Gapan City College {% now 'Y' %}</h6>
             <h6 class="text-orange"><i class="fa fa-copyright"></i>
                 copyrights reserved {% now 'Y' %}</h6>
+        </div>
 
-            <br>
+        <div class="col-lg-4">
+            <a href="https://web.facebook.com/cedrick.domingo.75">
+                <h6 class="text-secondary btn-link"><i class="fa fa-facebook-official text-blue">
+                </i>&nbsp;facebook.com/cedrick.domingo.75</h6></a>
+            <a href="{% url 'cedie' %}" class="btn-link" id="my-team">
+                    <i class="fa fa-code">
+                </i>My Team
+            </a>
         </div>
     </div>
 </div>

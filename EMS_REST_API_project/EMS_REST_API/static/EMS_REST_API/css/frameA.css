@@ -152,3 +152,20 @@ th, td {
     background-color: #af781e;
 }
 /*Cookie Consent End*/
+
+
+footer{
+    height: 250px;
+}
+
+
+#footer-container{
+    padding-top: 30px;
+}
+
+#my-team{
+    cursor: pointer;
+    color: #ff1315;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
