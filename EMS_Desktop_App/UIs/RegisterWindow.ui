@@ -805,6 +805,10 @@
      <string notr="true">color: #fff;
 background-color: rgb(209, 51, 51);
 font: 14px/20px &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius:20px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
 </string>
     </property>
     <property name="text">
