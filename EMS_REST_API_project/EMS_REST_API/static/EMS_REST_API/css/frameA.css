@@ -155,13 +155,9 @@ th, td {
 
 
 footer{
-    height: 250px;
+    height: 200px;
 }
 
-
-#footer-container{
-    padding-top: 30px;
-}
 
 #my-team{
     cursor: pointer;
