@@ -237,7 +237,7 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
         regex_contact = QtCore.QRegExp("^9(?!(000000000))\d{9}$")
         validator_contact = QtGui.QRegExpValidator(regex_contact)
 
-        regex_sss = QtCore.QRegExp("^(?!(0000))\d{4}-(?!0000000)\d{7}-(?!0000)\d{4}$")
+        regex_sss = QtCore.QRegExp("^(?!(00))\d{2}-(?!(000000000))\d{9}-(?!(0))\d{1}$")
         validator_sss = QtGui.QRegExpValidator(regex_sss)
 
         regex_philhealth = QtCore.QRegExp("^(?!(00))\d{2}-(?!(000000000))\d{9}-(?!(0))\d{1}$")
@@ -249,7 +249,7 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
         regex_tin = QtCore.QRegExp("^(?!(000))\d{3}-(?!(000))\d{3}-(?!(000))\d{3}-(?!(00000))\d{5}$")
         validator_tin = QtGui.QRegExpValidator(regex_tin)
 
-        regex_height = QtCore.QRegExp("^1(?!(00))\d{2}$")
+        regex_height = QtCore.QRegExp("^1(?!([1, 2, 9, 0]))\d{1}(?!(0))\d{1}$")
         validator_height = QtGui.QRegExpValidator(regex_height)
 
         self.fname_txt.setValidator(validator_letter)
@@ -464,7 +464,12 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
 
         title_failed = 'Failed'
 
-        if len(self.sss_txt.text()) != 17:
+        if len(self.height_txt.text()) != 3:
+            title = 'Failed'
+            msg = 'Incorrect height value'
+            return QtGui.QMessageBox.information(self, title, msg, None)
+
+        if len(self.sss_txt.text()) != 14:
             msg = 'Incorrect SSS number'
             QtGui.QMessageBox.information(self, title_failed, msg, None)
             return 0
@@ -476,7 +481,7 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
             msg = 'Incorrect PAGIBIG number'
             QtGui.QMessageBox.information(self, title_failed, msg, None)
             return 0
-        elif len(self.tin_txt.text()) != 17:
+        elif len(self.tin_txt.text()) < 16:
             msg = 'Incorrect TIN number'
             QtGui.QMessageBox.information(self, title_failed, msg, None)
             return 0

@@ -31,7 +31,7 @@ class RegisterWindow(QtGui.QMainWindow, RegistrationWindow.Ui_RegisterWindow):
         regex_contact = QtCore.QRegExp("^9(?!(000000000))\d{9}$")
         validator_contact = QtGui.QRegExpValidator(regex_contact)
 
-        regex_sss = QtCore.QRegExp("^(?!(0000))\d{4}-(?!0000000)\d{7}-(?!0000)\d{4}$")
+        regex_sss = QtCore.QRegExp("^(?!(00))\d{2}-(?!(000000000))\d{9}-(?!(0))\d{1}$")
         validator_sss = QtGui.QRegExpValidator(regex_sss)
 
         regex_philhealth = QtCore.QRegExp("^(?!(00))\d{2}-(?!(000000000))\d{9}-(?!(0))\d{1}$")
@@ -43,7 +43,7 @@ class RegisterWindow(QtGui.QMainWindow, RegistrationWindow.Ui_RegisterWindow):
         regex_tin = QtCore.QRegExp("^(?!(000))\d{3}-(?!(000))\d{3}-(?!(000))\d{3}-(?!(00000))\d{5}$")
         validator_tin = QtGui.QRegExpValidator(regex_tin)
 
-        regex_height = QtCore.QRegExp("^1(?!(00))\d{2}$")
+        regex_height = QtCore.QRegExp("^1(?!([1, 2, 9, 0]))\d{1}(?!(0))\d{1}$")
         validator_height = QtGui.QRegExpValidator(regex_height)
 
         passEcho = QtGui.QLineEdit.Password
@@ -159,13 +159,17 @@ class RegisterWindow(QtGui.QMainWindow, RegistrationWindow.Ui_RegisterWindow):
             msg = 'Please enter a correct contact number. eg. 9xxxxxxxxx'
             return QtGui.QMessageBox.information(self, title, msg, None)
 
+        if len(self.height_txt.text()) != 3:
+            title = 'Failed'
+            msg = 'Incorrect height value'
+            return QtGui.QMessageBox.information(self, title, msg, None)
+
         if len(dayoff.split(',')) > 4:
             title = 'Failed'
             msg = 'Maximum of 3 day-offs are allowed'
             return QtGui.QMessageBox.information(self, title, msg, None)
 
-
-        if len(self.sss_txt.text()) != 17:
+        if len(self.sss_txt.text()) != 14:
             title = 'Failed'
             msg = 'Incorrect SSS number'
         elif len(self.philhealth_txt.text()) != 14:
@@ -174,7 +178,7 @@ class RegisterWindow(QtGui.QMainWindow, RegistrationWindow.Ui_RegisterWindow):
         elif len(self.pagibig_txt.text()) != 14:
             title = 'Failed'
             msg = 'Incorrect PAGIBIG number'
-        elif len(self.tin_txt.text()) != 17:
+        elif len(self.tin_txt.text()) < 16:
             title = 'Failed'
             msg = 'Incorrect TIN number'
         else:

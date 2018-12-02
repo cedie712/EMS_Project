@@ -200,7 +200,7 @@
 
                     <h5><b>SSS Number:</b><br>
                     <input type="text" class="numdash form-control" name="sss_number" id="sss_number"
-                           pattern="^(?!(0000))\d{4}-(?!0000000)\d{7}-(?!0000)\d{4}$"
+                           pattern="^(?!(00))\d{2}-(?!(000000000))\d{9}-(?!(0))\d{1}$"
                            value="{{ employee_config.sss_number }}" required>
                     </h5><br>
 

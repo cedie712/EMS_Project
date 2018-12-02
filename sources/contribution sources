@@ -1,11 +1,37 @@
 tax
-https://www.rappler.com/business/196613-askthetaxwhiz-bir-withholding-tax-reform-law
+https://kickerdaily.com/posts/2017/12/zero-income-tax-for-p20833-below-monthly-salary-takes-effect-starting-1st-paycheck-of-2018/
+
+sample: https://www.google.com.ph/search?hs=wmg&biw=1366&bih=696&tbm=isch&sa=1&ei=ElwDXP2UL5mUvQTYopzYDQ&q=tin+sample+philippines&oq=tin+sample+&gs_l=img.3.0.35i39j0j0i30j0i8i30l7.1038.2348..3116...1.0..0.125.243.0j2....3..1....1..gws-wiz-img.vQVw2zDFWpA#imgrc=ZT6F7Z_WYwYdAM:
+
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 sss
 https://www.sss.gov.ph/sss/appmanager/pages.jsp?page=scheduleofcontribution
 
+sample: https://www.google.com.ph/search?tbm=isch&sa=1&ei=vVkDXP3cKJqSvQTlyLHgAw&q=sss+number+pattern+philippines+sample&oq=sss+num&gs_l=img.3.0.35i39j0i67j0j0i67j0l3j0i67j0l2.4274.5019..6532...0.0..0.219.498.0j2j1....3..1....1..gws-wiz-img.0xB4cuXK4aI#imgrc=mz2dPf-eHWjl9M:
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
 philhealth
 https://philpad.com/new-philhealth-contribution-table/
 
+sample: https://www.google.com.ph/search?tbm=isch&sa=1&ei=vVkDXP3cKJqSvQTlyLHgAw&q=philhealth+number+sample+2018&oq=phil&gs_l=img.3.0.35i39l2j0i67l8.1953.2665..4344...0.0..0.149.521.0j4....3..1....1..gws-wiz-img.......0.wdfxncjkYe8#imgrc=DiUcd8Pj4yczlM:
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
 pagibig
 https://powerpinoys.com/new-pagibig-contribution-table/
+
+sample: https://www.google.com.ph/search?hs=AQ1&biw=1366&bih=696&tbm=isch&sa=1&ei=kVsDXNzZB4XqvAT5j7eYBg&q=pagibig+number&oq=pagibig+number&gs_l=img.3..35i39l2j0j0i10l2j0j0i10l3j0i8i30.31367.31367..31628...0.0..0.135.135.0j1....1..1....1..gws-wiz-img.oyFGcbBy_T8#imgrc=reeN3AwB0Nj94M:
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+holiday_list_ph
+
+source: https://kittelsoncarpo.com/labor-employment/national-official-nonworking-holidays/
+
+regular_holiday_list = ['01-01', '03-29', '03-30', '04-09', '05-01', '06-12',
+                                     '06-15', '07-21', '07-27', '11-30', '12-25', '12-30']
+special_holiday_list = ['01-02', '02-16', '02-25', '03-31',
+                                     '08-21', '11-02', '12-24']

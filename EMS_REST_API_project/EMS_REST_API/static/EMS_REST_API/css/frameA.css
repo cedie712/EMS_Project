@@ -1,5 +1,5 @@
 .body{
-    background-color: whitesmoke;
+    background-color: #efefef;
 }
 
 .navlanding{
@@ -20,7 +20,13 @@
 
 
 .title-block{
-    padding-top: 150px;
+    /*padding-top: 150px;*/
+    display: flex;
+    margin-top: 200px;
+    align-items: end;
+    flex-direction: column;
+    justify-items: center;
+    padding: 2.5rem;
 }
 
 .text-white-dirty{

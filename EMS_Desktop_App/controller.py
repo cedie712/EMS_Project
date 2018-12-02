@@ -434,7 +434,7 @@ class AuthCDWindow(QtGui.QDialog, authenticatecd.Ui_Form):
 
 
     def check(self):
-        self.label.setText('Authenticating face in ...')
+        self.label.setText('  Identifying face in ...')
         self.label_cd.setText(str(self.time_cd))
         self.time_cd -= 1
         if self.time_cd < 0:
