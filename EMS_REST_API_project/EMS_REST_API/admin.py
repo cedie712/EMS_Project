@@ -1,7 +1,7 @@
 from django.contrib import admin
 from . models import Employee, EmployeeConfig, EmployeeProfile, AttendanceLog, SalaryReport, GlobalConfig
 
-admin.site.site_header = 'EMS Webext'
+admin.site.site_header = 'EMS Project'
 
 # Register your models here.
 admin.site.register(Employee)

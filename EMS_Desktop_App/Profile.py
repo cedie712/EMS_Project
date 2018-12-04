@@ -13,6 +13,7 @@ time_zone = pytz.timezone('Asia/Manila')
 import cv2
 from face import dataSetCreator
 from datasetcheck import CaptureCheckWindow
+from printdata import create_pdf
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -33,6 +34,8 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
         self.statusBar().setVisible(False)
         self.setWindowModality(QtCore.Qt.ApplicationModal)
         self.birthday_txt.setCalendarPopup(True)
+        self.print_btn.setVisible(False)
+        self.data_to_print = None
 
         self.user_id = user_id
         self.db = EMS_db_model()
@@ -41,7 +44,7 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
         self.attendancelog_btn.clicked.connect(self.show_attendance_view)
         self.update_btn.clicked.connect(self.update_employee)
         self.train_btn.clicked.connect(self.capture_dataset)
-
+        self.print_btn.clicked.connect(self.gen_pdf)
 
         # # # SALARY # # #
         self.netpay_frame.setVisible(False)
@@ -120,6 +123,8 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
                                 lbl_text_green % '%s, %s %s'.capitalize() %
                                 (emp['last_name'], emp['first_name'], emp['middle_name']))
 
+        self.name_full = '%s, %s %s'.capitalize() % (emp['last_name'], emp['first_name'], emp['middle_name'])
+
         self.lbl_id.setText(self.lbl_id.text() + \
                             lbl_text_green % sp.convert_id(emp['id'], emp['start_date'][:4]))
 
@@ -163,6 +168,7 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
 
         # Job Information
         self.lbl_position.setText(self.lbl_position.text() + label_color % emp['position'].capitalize())
+        self.position = emp['position']
 
         self.lbl_rate.setText(self.lbl_rate.text() + label_color % "PHP %s/hour" % str(config['rate_per_hour']))
 
@@ -335,41 +341,75 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
                                      label_color % str(selected_log['days_absent']))
 
         self.lbl_sss_2.setText(self.lbl_sss_2.text() + \
-                             label_color % str(round(selected_log['sss_contrib'], 2)))
+                             label_color % str("{:.2f}".format(selected_log['sss_contrib'])))
 
         self.lbl_philhealth_2.setText(self.lbl_philhealth_2.text() + \
-                                    label_color % str(round(selected_log['sss_contrib'], 2)))
+                                    label_color % str("{:.2f}".format(selected_log['sss_contrib'])))
 
         self.lbl_pagibig_2.setText(self.lbl_pagibig_2.text() + \
-                                 label_color % str(round(selected_log['pagibig_contrib'], 2)))
+                                 label_color % str("{:.2f}".format(selected_log['pagibig_contrib'])))
 
         self.lbl_tax.setText(self.lbl_tax.text() + \
-                             label_color % str(round(selected_log['tax'], 2)))
+                             label_color % str("{:.2f}".format(selected_log['tax'])))
 
-        total_deds = str(round(sum([selected_log['sss_contrib'], selected_log['sss_contrib'],
-                                    selected_log['sss_contrib'], selected_log['tax']]), 2))
+        total_deds = str("{:.2f}".format(sum([selected_log['sss_contrib'], selected_log['sss_contrib'],
+                                    selected_log['sss_contrib'], selected_log['tax']])))
 
         self.lbl_total_deductions.setText(self.lbl_total_deductions.text() + label_color % total_deds)
 
         self.lbl_special_pay.setText(self.lbl_special_pay.text() + \
-                                     label_color % str(round(selected_log['special_pay'], 2)))
+                                     label_color % str("{:.2f}".format(selected_log['special_pay'])))
 
         self.lbl_gross_pay.setText(self.lbl_gross_pay.text() + \
-                                   label_color % str(round(selected_log['gross_pay'], 2)))
+                                   label_color % str("{:.2f}".format(selected_log['gross_pay'])))
 
         self.lbl_period.setText(self.lbl_period.text() + label_color % period)
 
         status_text = self.lbl_status_2.text() + lbl_text_warning % 'Current'
+        stat = 'Current'
         if selected_log['is_released']:
             status_text = self.lbl_status_2.text() + lbl_text_green % 'Released'
+            stat = 'Released'
         self.lbl_status_2.setText(status_text)
 
         if selected_log['net_pay'] > 0:
             self.netpay_frame.setVisible(True)
 
         self.lbl_net_pay.setText(self.lbl_net_pay.text() +\
-                                 lbl_text_green % str(round(selected_log['net_pay'], 2)))
+                                 lbl_text_green % str("{:.2f}".format(selected_log['net_pay'])))
+        self.print_btn.setVisible(True)
+
+        self.data_to_print = {
+            'title': self.name_full.replace(' ', '') + '-' +
+                     datetime.now().strftime("%B %d, %Y %I:%M:%S %p") + '-' + period,
+            'current_date': datetime.now().strftime("%B %d, %Y %I:%M:%S %p"),
+            'total_time': str(selected_log['total_time']),
+            'total_overtime': str(selected_log['total_over_time']),
+            'days_present': str(selected_log['days_present']),
+            'days_absent': str(selected_log['days_absent']),
+            'sss': str("{:.2f}".format(selected_log['sss_contrib'])),
+            'philhealth': str("{:.2f}".format(selected_log['philhealth_contrib'])),
+            'pagibig': str("{:.2f}".format(selected_log['pagibig_contrib'])),
+            'tax': str("{:.2f}".format(selected_log['tax'])),
+            'total_ded': total_deds,
+            'special_pay': str("{:.2f}".format(selected_log['special_pay'])),
+            'gross_pay': str("{:.2f}".format(selected_log['gross_pay'])),
+            'period': period,
+            'status': stat,
+            'net_pay': str("{:.2f}".format(selected_log['net_pay'])),
+            'name': self.name_full,
+            'position': self.position
+        }
+
         # # # SALARY # # #
+
+    # # # Generate and Print PDF # # #
+    def gen_pdf(self):
+        create_pdf(self.data_to_print)
+        return  QtGui.QMessageBox.warning(self, 'Note', 'PDF file was generated.'
+                                                        ' Silent print job was sent on process', None)
+    # # # Generate and Print PDF # # #
+
 
     # # # Update User Info and Config # # #
     def update_employee(self):

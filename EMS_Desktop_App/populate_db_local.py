@@ -43,7 +43,7 @@ for i in range(228):
             subprocess.call(shlex.split("sudo date -s '%s'" % date_str))
             subprocess.call(shlex.split("sudo hwclock -w"))
 
-            if i % 7 != 0:
+            if i not in [21, 22, 45, 46, 57, 58, 89, 90, 91, 92, 101, 100]:
                 clock_in()
 
             print('first')
@@ -55,7 +55,7 @@ for i in range(228):
             subprocess.call(shlex.split("sudo date -s '%s'" % date_str))
             subprocess.call(shlex.split("sudo hwclock -w"))
 
-            if i % 7 != 0:
+            if i not in [21, 22, 45, 46, 57, 58, 89, 90, 91, 92, 101, 100]:
                 clock_out()
 
             yearint = int(datetime.now().year)
@@ -76,4 +76,3 @@ for i in range(228):
             subprocess.call(shlex.split("sudo hwclock -w"))
 
             print('second')
-

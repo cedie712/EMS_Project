@@ -440,6 +440,14 @@ class Ui_EmployeeView(object):
         font.setWeight(75)
         self.lbl_net_pay.setFont(font)
         self.lbl_net_pay.setObjectName(_fromUtf8("lbl_net_pay"))
+        self.print_btn = QtGui.QPushButton(self.frame)
+        self.print_btn.setGeometry(QtCore.QRect(590, 460, 131, 41))
+        self.print_btn.setFocusPolicy(QtCore.Qt.TabFocus)
+        self.print_btn.setStyleSheet(_fromUtf8("color: #fff;\n"
+"background-color: rgb(0, 156, 5);\n"
+"font: 14px/20px \"Helvetica Neue\",Helvetica,Arial,sans-serif;"))
+        self.print_btn.setIconSize(QtCore.QSize(30, 30))
+        self.print_btn.setObjectName(_fromUtf8("print_btn"))
         self.scrollArea = QtGui.QScrollArea(self.tab_2)
         self.scrollArea.setGeometry(QtCore.QRect(780, 60, 311, 381))
         self.scrollArea.setWidgetResizable(True)
@@ -472,7 +480,7 @@ class Ui_EmployeeView(object):
         self.update_btn.setGeometry(QtCore.QRect(940, 550, 151, 41))
         self.update_btn.setFocusPolicy(QtCore.Qt.TabFocus)
         self.update_btn.setStyleSheet(_fromUtf8("color: #fff;\n"
-"background-color: rgb(21, 141, 141);\n"
+"background-color: rgb(0, 156, 5);\n"
 "font: 14px/20px \"Helvetica Neue\",Helvetica,Arial,sans-serif;"))
         self.update_btn.setIconSize(QtCore.QSize(30, 30))
         self.update_btn.setObjectName(_fromUtf8("update_btn"))
@@ -895,6 +903,7 @@ class Ui_EmployeeView(object):
         self.lbl_period.setText(_translate("EmployeeView", "Period: ", None))
         self.lbl_status_2.setText(_translate("EmployeeView", "Status: ", None))
         self.lbl_net_pay.setText(_translate("EmployeeView", "Net Pay: PHP ", None))
+        self.print_btn.setText(_translate("EmployeeView", "Print Report", None))
         self.label_3.setText(_translate("EmployeeView", "Salary History", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("EmployeeView", "Salary Logs", None))
         self.update_btn.setText(_translate("EmployeeView", "Update Information", None))
@@ -942,7 +951,7 @@ class Ui_EmployeeView(object):
         self.label_10.setText(_translate("EmployeeView", "Please only use this if the\n"
 " user\'s face could not be\n"
 " recognized anymore.\n"
-" I am saving you time\n"
+" I am saving your time\n"
 " dude.", None))
         self.train_btn.setText(_translate("EmployeeView", "...", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("EmployeeView", "Settings and Configurations", None))
