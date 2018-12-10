@@ -2,9 +2,10 @@ from PyQt4 import QtGui, QtCore
 import RegistrationWindow
 from models import EMS_db_model
 import cv2
-from face import dataSetCreator
+from face import dataSetCreator, Identifier
 from datasetcheck import CaptureCheckWindow
 import config
+from flashCD import AuthCDWindow
 
 
 class RegisterWindow(QtGui.QMainWindow, RegistrationWindow.Ui_RegisterWindow):
@@ -16,6 +17,9 @@ class RegisterWindow(QtGui.QMainWindow, RegistrationWindow.Ui_RegisterWindow):
         fg.moveCenter(cp)
         self.move(fg.topLeft())
         self.setFixedSize(self.size())
+
+        self.parent = parent
+
         self.cancel_btn.clicked.connect(self.close_window)
         self.male_radio.setChecked(True)
         self.birthday_txt.setCalendarPopup(True)
@@ -182,6 +186,19 @@ class RegisterWindow(QtGui.QMainWindow, RegistrationWindow.Ui_RegisterWindow):
             title = 'Failed'
             msg = 'Incorrect TIN number'
         else:
+
+            authCD = AuthCDWindow(self)
+            if not authCD.exec_():
+                authCD.hide()
+            else:
+                self.setEnabled(False)
+                cap = Identifier.Detect(config.CAMERA_INDEX)
+                id = cap.identify()
+                cv2.destroyAllWindows()
+                self.setEnabled(True)
+                if id is not False:
+                    return QtGui.QMessageBox.warning(self, 'Note', 'That face was already in use.', None)
+
             register = db.register_user(content)
 
             if register == 'complete the fields':

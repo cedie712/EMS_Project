@@ -22,6 +22,9 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QToolButton" name="employeeinfo_toolbtn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>1070</x>
@@ -54,6 +57,9 @@
     </property>
    </widget>
    <widget class="QToolButton" name="charts_toolbtn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>770</x>
@@ -86,6 +92,9 @@
     </property>
    </widget>
    <widget class="QToolButton" name="settings_toolbtn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>1220</x>
@@ -118,6 +127,9 @@
     </property>
    </widget>
    <widget class="QToolButton" name="register_toolbtn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>920</x>
@@ -167,7 +179,7 @@
      </font>
     </property>
     <property name="text">
-     <string>23:45:55</string>
+     <string>07:12:00 PM</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -190,8 +202,11 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
     <property name="text">
-     <string>December 29, 2018</string>
+     <string>March 16, 2013</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -207,7 +222,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{border: None;}</string>
+     <string notr="true"/>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -364,8 +379,13 @@
       <x>30</x>
       <y>170</y>
       <width>431</width>
-      <height>331</height>
+      <height>291</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">alternate-background-color: rgb(43, 45, 49);
+color: rgb(255, 255, 255);
+background-color: rgb(77, 94, 102);</string>
     </property>
     <property name="gridVisible">
      <bool>false</bool>
@@ -491,6 +511,9 @@
     </property>
    </widget>
    <widget class="QToolButton" name="btn_alllogs">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>290</x>
@@ -549,6 +572,9 @@
     </property>
    </widget>
    <widget class="QToolButton" name="memo_toolbtn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>470</x>
@@ -869,6 +895,70 @@ Logs</string>
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QPushButton" name="unlock_admin_widget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>480</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::TabFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+background-color: rgb(21, 141, 141);
+font: 14px/20px &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;</string>
+    </property>
+    <property name="text">
+     <string>Unlock Administrative Widgets</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/unlock.png</normaloff>../icons/unlock.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="lock_admin_widget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>480</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::TabFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fff;
+background-color: rgb(0, 156, 5);
+font: 14px/20px &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;</string>
+    </property>
+    <property name="text">
+     <string>Lock Administrative Widgets</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/lock.png</normaloff>../icons/lock.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <zorder>lock_admin_widget</zorder>
+   <zorder>unlock_admin_widget</zorder>
    <zorder>label_5</zorder>
    <zorder>label_9</zorder>
    <zorder>label_8</zorder>

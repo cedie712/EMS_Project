@@ -4,7 +4,8 @@ from PyQt4 import QtGui, QtCore
 # from speechProcess import Speech
 from datetime import datetime, date
 # import threading
-import authenticatecd
+# import authenticatecd
+from flashCD import AuthCDWindow
 import Home, authentication_form
 from Memo import MemoWindow
 from help import HelpWindow
@@ -44,6 +45,12 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
         # self.btn_signin.clicked.connect(self.capture_thread)
         # self.btn_receiver.clicked.connect(self.show_logs)
         # self.btn_receiver.clicked.connect(self.capture_voice)
+
+        self.lock_admin_widget.setVisible(False)
+        self.admin_widget_state = 'disabled'
+
+        self.unlock_admin_widget.clicked.connect(self.enable_admin_widgets)
+        self.lock_admin_widget.clicked.connect(self.disable_admin_widgets)
 
         self.btn_signin.clicked.connect(self.sign_in)
         self.btn_signin.setShortcut('Ctrl+I')
@@ -229,7 +236,7 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             return 0
         authCD = AuthCDWindow(self)
         if not authCD.exec_():
-            login.hide()
+            authCD.hide()
         else:
             self.setEnabled(False)
             cap = Identifier.Detect(config.CAMERA_INDEX)
@@ -255,13 +262,16 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             if note == 'Invalid Credentials':
                 self.clear_pane()
 
-    def show_logs(self, command, password):
+    def show_logs(self, command, password=None):
         db = self.connection()
         if db is False:
             return 0
+        if command == 'show all logs':
+            self.show_all_attendance_logs()
+            return 0
         authCD = AuthCDWindow(self)
         if not authCD.exec_():
-            login.hide()
+            authCD.hide()
         else:
             self.setEnabled(False)
             cap = Identifier.Detect(config.CAMERA_INDEX)
@@ -286,13 +296,13 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             if command == 'show my logs':
                 emp_id = db.get_employee_id(int(id))
                 self.show_attendance_logs(emp_id['id'])
-            elif command == 'show all logs':
-                if admin_validate is False:
-                    self.clear_pane()
-                    self.user_pass.clear()
-                    return QtGui.QMessageBox.warning(self, 'Note',
-                                                     'You are not authorized for this action', None)
-                self.show_all_attendance_logs()
+            # elif command == 'show all logs':
+                # if admin_validate is False:
+                #     self.clear_pane()
+                #     self.user_pass.clear()
+                #     return QtGui.QMessageBox.warning(self, 'Note',
+                #                                      'You are not authorized for this action', None)
+                # self.show_all_attendance_logs()
             self.user_pass.clear()
 
 
@@ -322,9 +332,10 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             self.show_logs('show my logs', checkpass[1])
 
     def all_log_request(self):
-        checkpass = self.check_pass()
-        if checkpass[0]:
-            self.show_logs('show all logs', checkpass[1])
+        # checkpass = self.check_pass()
+        # if checkpass[0]:
+        #     self.show_logs('show all logs', checkpass[1])
+        self.show_logs('show all logs')
 
     def check_pass(self):
         userpass = self.user_pass.text()
@@ -352,22 +363,22 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
         if db is False:
             return 0
         register_window = RegisterWindow(self)
-        login = AuthenticationWindow(self)
-        if not login.exec_():
-            login.hide()
-        else:
-            register_window.show()
+        # login = AuthenticationWindow(self)
+        # if not login.exec_():
+        #     login.hide()
+        # else:
+        register_window.show()
 
     def edit_config_show(self):
         db = self.connection()
         if db is False:
             return 0
         globalconfig_window = GlobalConfigWindow(self)
-        login = AuthenticationWindow(self)
-        if not login.exec_():
-            login.hide()
-        else:
-            globalconfig_window.show()
+        # login = AuthenticationWindow(self)
+        # if not login.exec_():
+        #     login.hide()
+        # else:
+        globalconfig_window.show()
 
     def employee_list_show(self):
         db = self.connection()
@@ -375,11 +386,11 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             return 0
         emp_list = db.fetch_profile()
         employee_list_window = EmployeeListView(emp_list, self)
-        login = AuthenticationWindow(self)
-        if not login.exec_():
-            login.hide()
-        else:
-            employee_list_window.show()
+        # login = AuthenticationWindow(self)
+        # if not login.exec_():
+        #     login.hide()
+        # else:
+        employee_list_window.show()
 
     def clocked_employee_show(self):
         db = self.connection()
@@ -392,23 +403,58 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
 
     def graphopt_show(self):
         graph_window = GraphOpt(self)
-        login = AuthenticationWindow(self)
-        if not login.exec_():
-            login.hide()
-        else:
-            graph_window.show()
+        # login = AuthenticationWindow(self)
+        # if not login.exec_():
+        #     login.hide()
+        # else:
+        graph_window.show()
 
     def memo_show(self):
         memo_window = MemoWindow(self)
-        login = AuthenticationWindow(self)
-        if not login.exec_():
-            login.hide()
-        else:
-            memo_window.show()
+        # login = AuthenticationWindow(self)
+        # if not login.exec_():
+        #     login.hide()
+        # else:
+        memo_window.show()
 
     def help_show(self):
         help_me = HelpWindow(self)
         help_me.show()
+
+# # # # # # AFTER DEFENSE UPDATE # # # # # #
+    def enable_admin_widgets(self):
+        login = AuthenticationWindow(self)
+        if not login.exec_():
+            login.hide()
+        else:
+            self.btn_alllogs.setEnabled(True)
+            self.memo_toolbtn.setEnabled(True)
+            self.charts_toolbtn.setEnabled(True)
+            self.register_toolbtn.setEnabled(True)
+            self.employeeinfo_toolbtn.setEnabled(True)
+            self.settings_toolbtn.setEnabled(True)
+            self.admin_widget_state = 'enabled'
+            self.unlock_admin_widget.setVisible(False)
+            self.lock_admin_widget.setVisible(True)
+
+    def disable_admin_widgets(self):
+        are_you_sure = QtGui.QMessageBox.question(self, 'Note',
+                                            'Administrative widgets will be disabled, my friend.\n'
+                                            'Do you like it?',
+                                                  QtGui.QMessageBox.Yes | QtGui.QMessageBox.No)
+        if are_you_sure == QtGui.QMessageBox.Yes:
+            self.btn_alllogs.setEnabled(False)
+            self.memo_toolbtn.setEnabled(False)
+            self.charts_toolbtn.setEnabled(False)
+            self.register_toolbtn.setEnabled(False)
+            self.employeeinfo_toolbtn.setEnabled(False)
+            self.settings_toolbtn.setEnabled(False)
+            self.admin_widget_state = 'disabled'
+            self.unlock_admin_widget.setVisible(True)
+            self.lock_admin_widget.setVisible(False)
+        else:
+            pass
+# # # # # # AFTER DEFENSE UPDATE # # # # # #
 
     def connection(self):
         try:
@@ -417,29 +463,6 @@ class MainWindow(QtGui.QMainWindow, Home.Ui_MainWindow):
             QtGui.QMessageBox.warning(self, 'Connection Failed',
                                             'Cannot connect to the server,\nCheck your internet connection.', None)
             return False
-
-
-class AuthCDWindow(QtGui.QDialog, authenticatecd.Ui_Form):
-    def __init__(self, parent=None):
-        super(AuthCDWindow, self).__init__(parent)
-        self.setupUi(self)
-        self.setWindowFlags(self.windowFlags() | QtCore.Qt.FramelessWindowHint)
-        self.setWindowModality(QtCore.Qt.ApplicationModal)
-        self.label.setText('Reading Data Sets.')
-        self.show()
-        self.time_cd = 3
-        self.time_timer = QtCore.QTimer(self)
-        self.time_timer.timeout.connect(self.check)
-        self.time_timer.start(1000)
-
-
-    def check(self):
-        self.label.setText('  Identifying face in ...')
-        self.label_cd.setText(str(self.time_cd))
-        self.time_cd -= 1
-        if self.time_cd < 0:
-            self.time_timer.stop()
-            self.accept()
 
 
 class AuthenticationWindow(QtGui.QDialog, authentication_form.Ui_authentication_form):
@@ -483,7 +506,7 @@ class AuthenticationWindow(QtGui.QDialog, authentication_form.Ui_authentication_
         else:
             authCD = AuthCDWindow(self)
             if not authCD.exec_():
-                login.hide()
+                authCD.hide()
             else:
                 self.setEnabled(False)
                 cap = Identifier.Detect(config.CAMERA_INDEX)
@@ -507,9 +530,8 @@ class AuthenticationWindow(QtGui.QDialog, authentication_form.Ui_authentication_
 
 if __name__ == '__main__':
     app = QtGui.QApplication(sys.argv)
-    login = AuthenticationWindow()
-    if not login.exec_():
-        sys.exit()
-
+    # login = AuthenticationWindow()
+    # if not login.exec_():
+    #     sys.exit()
     main = MainWindow()
     sys.exit(app.exec_())

@@ -15,6 +15,7 @@ class ClockedEmployeeWindow(QtGui.QMainWindow, ClockedinView.Ui_ClockedEmployee)
         self.move(fg.topLeft())
         self.setFixedSize(self.size())
 
+        self.parent = parent
         self.scrollArea.setWidgetResizable(True)
         self.scrollContent = QtGui.QWidget(self.scrollArea)
         self.scrollLayout = QtGui.QVBoxLayout(self.scrollContent)
@@ -37,14 +38,16 @@ class ClockedEmployeeWindow(QtGui.QMainWindow, ClockedinView.Ui_ClockedEmployee)
                 btn_link.setStyleSheet("text-align: left;\n color: #fff;\n"
                                        "background-color: rgb(21, 141, 141);")
                 btn_link.clicked.connect(partial(self.grep_profile, i['id']))
+                if self.parent.admin_widget_state == 'disabled':
+                    btn_link.setEnabled(False)
                 self.scrollLayout.addWidget(btn_link)
                 self.scrollArea.setWidget(self.scrollContent)
 
     def grep_profile(self, uid):
-        from controller import AuthenticationWindow
+        # from controller import AuthenticationWindow
         profile_window = ProfileWindow(uid, self)
-        login = AuthenticationWindow(self)
-        if not login.exec_():
-            login.hide()
-        else:
-            profile_window.show()
+        # login = AuthenticationWindow(self)
+        # if not login.exec_():
+        #     login.hide()
+        # else:
+        profile_window.show()

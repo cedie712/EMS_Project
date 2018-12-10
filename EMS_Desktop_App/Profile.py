@@ -11,9 +11,10 @@ import pytz
 from functools import partial
 time_zone = pytz.timezone('Asia/Manila')
 import cv2
-from face import dataSetCreator
+from face import dataSetCreator, Identifier
 from datasetcheck import CaptureCheckWindow
 from printdata import create_pdf
+from flashCD import AuthCDWindow
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -542,20 +543,34 @@ class ProfileWindow(QtGui.QMainWindow, EmployeeView.Ui_EmployeeView):
 
     # # # Update Face Data Set # # #
     def capture_dataset(self):
+
         emp = self.fetch_employee()
         userx = self.db.get_user_info(emp['user'])
-        self.setEnabled(False)
-        dataSetCreator.DataSetCreator(config.CAMERA_INDEX, int(userx[2]), 1, 'dataSetsample')
-        check_if_ok = CaptureCheckWindow(int(userx[2]), self)
-        if not check_if_ok.exec_():
-            check_if_ok.hide()
+        authCD = AuthCDWindow(self)
+        if not authCD.exec_():
+            authCD.hide()
         else:
-            pass
-        cv2.destroyAllWindows()
-        self.setEnabled(True)
-        msg = 'Face data sets are updated'
-        QtGui.QMessageBox.information(self, 'Note', msg, None)
-        return 0
+            self.setEnabled(False)
+            cap = Identifier.Detect(config.CAMERA_INDEX)
+            id = cap.identify()
+            cv2.destroyAllWindows()
+            self.setEnabled(True)
+            if id is False or int(id) == int(userx[2]):
+
+                self.setEnabled(False)
+                dataSetCreator.DataSetCreator(config.CAMERA_INDEX, int(userx[2]), 1, 'dataSetsample')
+                check_if_ok = CaptureCheckWindow(int(userx[2]), for_update=True, parent=self)
+                if not check_if_ok.exec_():
+                    check_if_ok.hide()
+                else:
+                    pass
+                cv2.destroyAllWindows()
+                self.setEnabled(True)
+                msg = 'Face data sets are updated'
+                QtGui.QMessageBox.information(self, 'Note', msg, None)
+                return 0
+            else:
+                return QtGui.QMessageBox.warning(self, 'Note', 'That face was already in use by other users', None)
     # # # Update Face Data Set # # #
 
 
